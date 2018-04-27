@@ -10,15 +10,16 @@ import Foundation
 
 class Article {
     
-    var author: String = ""
-    var publication: String = ""
-    var title: String = ""
-    var content: String = ""
+    var author: String
+    var publication: String
+    var title: String
+    var content: String
     
+    //Modificateur
     func setAuthor(txt: String){
         author = txt
     }
-    
+    //Accesseur
     func getAuthor() -> String {
         return self.author
     }
@@ -47,13 +48,20 @@ class Article {
         return self.author
     }
     
-//    print("Auteur de l'article : " + article.auteur)
-//
-//    print("Date de pubication : " + article.publication)
-//
-//    print("Titre de l'article : " + article.titre)
-//
-//    print("Contenu : " + article.contenu)
-//
-//
+    //Constructeurs
+    init(){
+        self.author = "author"
+        self.publication = "publication"
+        self.title = "title"
+        self.content = "content"
+    }
+    
+    init(author: String, publication: String, title: String, content: String){
+        self.author = author
+        self.publication = publication
+        self.title = title
+        self.content = content
+    }
+    
+
 }
