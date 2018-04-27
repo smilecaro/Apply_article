@@ -10,9 +10,11 @@ import UIKit
 
 class ReadArticleViewController: UITableViewController {
     
+    var journal = Journal()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
         navigationItem.title = "Read my article"
         
         tableView.register(MyCell.self, forCellReuseIdentifier: "cellId")
@@ -20,17 +22,34 @@ class ReadArticleViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return journal.articleList.count
     }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
+        
+        let cell = MyCell()
+        let article = journal.articleList[indexPath.row]
+        
+        cell.nameLabel.text = article.getTitle()
+        
+        return cell
+        
+        
+        //return tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath)
     }
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        self.journal = [indexPath.row]
+//
+//    }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         return tableView.dequeueReusableCell(withIdentifier: "headerId")
     }
     
 }
+
 
 class Header: UITableViewHeaderFooterView {
     

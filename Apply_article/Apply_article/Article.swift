@@ -25,27 +25,27 @@ class Article {
     }
     
     func setPublication(txt: String){
-        author = txt
+        publication = txt
     }
     
     func getPublication() -> String {
-        return self.author
+        return self.publication
     }
     
     func setTitle(txt: String){
-        author = txt
+        title = "   " + txt
     }
     
     func getTitle() -> String {
-        return self.author
+        return self.title
     }
     
     func setContent(txt: String){
-        author = txt
+        content = txt
     }
     
     func getContent() -> String {
-        return self.author
+        return self.content
     }
     
     //Constructeurs

@@ -8,22 +8,15 @@
 
 import UIKit
 
-class Main: UIViewController {
+class Journal {
 
     var articleList: [Article] = []
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+
+    init(){
+        self.articleList = []
         createArticleList()
-        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
+    
     func createArticleList(){
         
         var art1 = Article()
@@ -35,10 +28,10 @@ class Main: UIViewController {
         
         var art2 = Article()
         
-        art2.author = "Molière"
-        art2.publication = "24 mai 1671"
-        art2.title = "Les Fourberies de Scapin"
-        art2.content = "Mais que diable allait-il faire dans cette galère ? !"
+        art2.setAuthor(txt: "Molière")
+        art2.setPublication(txt: "24 mai 1671")
+        art2.setTitle(txt: "Les Fourberies de Scapin")
+        art2.setContent(txt: "Mais que diable allait-il faire dans cette galère ?!")
         
         self.articleList.append(art1)
         self.articleList.append(art2)
@@ -47,4 +40,3 @@ class Main: UIViewController {
     }
     
 }
-
