@@ -8,17 +8,11 @@
 
 import UIKit
 
-class ReadArticleViewController: UIViewController {
+class ReadArticleViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.lightGray
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-        
     }
     
 }

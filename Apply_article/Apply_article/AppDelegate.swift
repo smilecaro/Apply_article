@@ -15,8 +15,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.makeKeyAndVisible()
+        
+        let controller = ReadArticleViewController()
+        let navigationCrontroller = UINavigationController(rootViewController: controller)
+        self.window?.rootViewController = navigationCrontroller
+            
         self.window?.rootViewController = UINavigationController(rootViewController: InterfaceAccueilViewController())
+        // Override point for customization after application launch.
         return true
     }
 
