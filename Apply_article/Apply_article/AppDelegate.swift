@@ -22,7 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller = ReadArticleViewController()
         let navigationCrontroller = UINavigationController(rootViewController: controller)
         self.window?.rootViewController = navigationCrontroller
-            
+        
+        let controller2 = WriteArticleViewController()
+        let navigationCrontroller2 = UINavigationController(rootViewController: controller2)
+        self.window?.rootViewController = navigationCrontroller2
+        
         self.window?.rootViewController = UINavigationController(rootViewController: InterfaceAccueilViewController())
         // Override point for customization after application launch.
         return true

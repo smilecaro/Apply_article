@@ -8,17 +8,12 @@
 
 import UIKit
 
-class WriteArticleViewController: UIViewController {
+class WriteArticleViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.lightGray
-    }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
+        navigationItem.title = "Write my own article"
     }
     
 }
