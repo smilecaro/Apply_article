@@ -28,6 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window?.rootViewController = navigationCrontroller2
         
         self.window?.rootViewController = UINavigationController(rootViewController: InterfaceAccueilViewController())
+      
         // Override point for customization after application launch.
         return true
     }

@@ -10,7 +10,7 @@ import UIKit
 
 class ReadArticleViewController: UITableViewController {
     
-    var journal = Journal()
+    var journal = Journal.singleton
     
     override func viewDidLoad() {
         super.viewDidLoad()

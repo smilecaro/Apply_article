@@ -10,7 +10,7 @@ import UIKit
 
 class PrintArticleViewController: UIViewController {
 
-    var journal = Journal()
+    var journal = Journal.singleton
     var article: Article!
     
     override func viewDidLoad() {

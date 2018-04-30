@@ -12,6 +12,8 @@ class InterfaceAccueilViewController: UIViewController {
     
     var color =  UIColor.lightGray
     
+    
+    
 
     override func viewDidLoad(){
         super.viewDidLoad()

@@ -10,11 +10,14 @@ import UIKit
 
 class Journal {
 
+    static let singleton = Journal()
+
     var articleList: [Article] = []
 
     init(){
         self.articleList = []
         createArticleList()
+        print("I'm created")
     }
     
     func createArticleList(){
@@ -58,3 +61,5 @@ class Journal {
 //    journal.articleList.append(Article(author: "Baudelaire", publication: "1869", title: "L'invitation au Voyage", content: "Mon enfant, ma sœur \n Songe à la douceur \n D’aller là-bas vivre ensemble ! \n Aimer à loisir, \n Aimer et mourir \n Au pays qui te ressemble !\n Les soleils mouillés\n De ces ciels brouillés\n Pour mon esprit ont les charmes\n Si mystérieux\n De tes traîtres yeux,\n Brillant à travers leurs larmes.\n \n Là, tout n’est qu’ordre et beauté,\n Luxe, calme et volupté. \n\n Des meubles luisants,\n Polis par les ans,\n Décoreraient notre chambre ;\n Les plus rares fleurs\n Mêlant leurs odeurs\n Aux vagues senteurs de l’ambre,\n Les riches plafonds,\n Les miroirs profonds,\n La splendeur orientale,\n Tout y parlerait\n À l’âme en secret\n Sa douce langue natale. \n \n Là, tout n’est qu’ordre et beauté,\n Luxe, calme et volupté. \n \n Vois sur ces canaux\n Dormir ces vaisseaux\n Dont l’humeur est vagabonde ;\n C’est pour assouvir\n Ton moindre désir\n Qu’ils viennent du bout du monde.\n – Les soleils couchants\nRevêtent les champs,\nLes canaux, la ville entière,\nD’hyacinthe et d’or ;\n Le monde s’endort\n Dans une chaude lumière. \n \n Là, tout n’est qu’ordre et beauté,\n Luxe, calme et volupté."))
 //    
 }
+
+

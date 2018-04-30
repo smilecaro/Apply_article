@@ -12,7 +12,7 @@ class WriteArticleViewController: UIViewController {
     
     var color =  UIColor.lightGray
     var article = Article()
-    var journal = Journal()
+    var journal = Journal.singleton
     
     let textAuthor = UITextField()
     let textPublication = UITextField()
@@ -105,6 +105,7 @@ class WriteArticleViewController: UIViewController {
         article.setPublication(txt: self.textPublication.text!)
         article.setTitle(txt: self.textTitle.text!)
         article.setContent(txt: self.textContent.text!)
+        Journal.singleton.articleList.append(article)
         print("click!")
     }
 
