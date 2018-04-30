@@ -18,6 +18,7 @@
 		82CC4C48209311E4009A3EFB /* InterfaceAccueilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC4C47209311E4009A3EFB /* InterfaceAccueilViewController.swift */; };
 		82CC4C4A20931DDD009A3EFB /* ReadArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC4C4920931DDD009A3EFB /* ReadArticleViewController.swift */; };
 		82CC4C4C20931DF5009A3EFB /* WriteArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC4C4B20931DF5009A3EFB /* WriteArticleViewController.swift */; };
+		82CC4C4E209710A9009A3EFB /* PrintArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CC4C4D209710A9009A3EFB /* PrintArticleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		82CC4C47209311E4009A3EFB /* InterfaceAccueilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceAccueilViewController.swift; sourceTree = "<group>"; };
 		82CC4C4920931DDD009A3EFB /* ReadArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadArticleViewController.swift; sourceTree = "<group>"; };
 		82CC4C4B20931DF5009A3EFB /* WriteArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteArticleViewController.swift; sourceTree = "<group>"; };
+		82CC4C4D209710A9009A3EFB /* PrintArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrintArticleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				82CC4C47209311E4009A3EFB /* InterfaceAccueilViewController.swift */,
 				82CC4C4920931DDD009A3EFB /* ReadArticleViewController.swift */,
 				82CC4C4B20931DF5009A3EFB /* WriteArticleViewController.swift */,
+				82CC4C4D209710A9009A3EFB /* PrintArticleViewController.swift */,
 				82CC4C1B20920CD1009A3EFB /* Main.storyboard */,
 				82CC4C1E20920CD6009A3EFB /* Assets.xcassets */,
 				82CC4C2020920CD6009A3EFB /* LaunchScreen.storyboard */,
@@ -273,6 +276,7 @@
 				82CC4C4C20931DF5009A3EFB /* WriteArticleViewController.swift in Sources */,
 				82CC4C1820920CD1009A3EFB /* AppDelegate.swift in Sources */,
 				82CC4C4A20931DDD009A3EFB /* ReadArticleViewController.swift in Sources */,
+				82CC4C4E209710A9009A3EFB /* PrintArticleViewController.swift in Sources */,
 				82CC4C462092111A009A3EFB /* Article.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

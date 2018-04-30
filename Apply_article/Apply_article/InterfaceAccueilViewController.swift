@@ -11,6 +11,7 @@ import UIKit
 class InterfaceAccueilViewController: UIViewController {
     
     var color =  UIColor.lightGray
+    
 
     override func viewDidLoad(){
         super.viewDidLoad()
@@ -23,16 +24,6 @@ class InterfaceAccueilViewController: UIViewController {
         readArticleContraint()
         writeArticleContraint()
     }
-    
-    //////////LABEL//////////
-    
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//
-//        labelArticle.font = UIFont.boldSystemFont(ofSize: 20)
-//        labelArticle.font = UIFont.systemFont(ofSize: 15)
-//    }
-
     
     //////////READ ARTICLE//////////
     
@@ -50,22 +41,21 @@ class InterfaceAccueilViewController: UIViewController {
         return readArticle
     }()
     
-    @objc func readArticleAction(_ sender:UIButton!)
-    {
+    @objc func readArticleAction(_ sender:UIButton!) {
         
         self.navigationController?.pushViewController(ReadArticleViewController(), animated: true)
     }
     
     func readArticleContraint(){
 
-        readArticle.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -50).isActive = true
+        readArticle.centerYAnchor.constraint(equalTo: self.view.centerYAnchor, constant: -30).isActive = true
         readArticle.centerXAnchor.constraint(equalTo: self.view.centerXAnchor).isActive = true
 
         readArticle.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.5).isActive = true
         readArticle.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.05).isActive = true
     }
     
-    //////////READ ARTICLE//////////
+    //////////WRITE ARTICLE//////////
     
     lazy var writeArticle: UIButton = {
         

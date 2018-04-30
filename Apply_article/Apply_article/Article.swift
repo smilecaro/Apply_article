@@ -33,7 +33,7 @@ class Article {
     }
     
     func setTitle(txt: String){
-        title = "   " + txt
+        title = txt
     }
     
     func getTitle() -> String {
